@@ -7,145 +7,126 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/info-style.css">
-    <title>Project</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Guest House Emina - Info</title>
   </head>
   <body>
     
 
 
-    <div class="banner-above-menu d-flex align-middle flex-row justify-content-between">
-        <div class="banner-container d-flex ">
-        
-            <img src="media/ahmed-banner-h100.png" alt="logo">    
-    
+    <header>
+        <div class="nav-inner">
+            <a href="index.html" class="logo-link">
+                <img src="media/ahmed-banner-h100.png" alt="Guest House Emina" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="index.html#about-us">About us</a>
+                <a href="info.html">Information</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="info.html#location">Location</a>
+                <a href="#contact-us">Contact us</a>
+            </div>
+            <span class="menu-button" onclick="openNav()">&#9776;</span>
         </div>
-        <div class="banner-text d-none d-lg-flex">
-          <p>A luxury villa experience</p>
-        </div>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html#about-us">About us</a>
+        <a href="info.html">Information</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="info.html#location">Location</a>
+        <a href="#contact-us">Contact us</a>
     </div>
 
 
 
 
-    <div class="actual-menu d-flex flex-row-reverse">
-      <div class="mobile-menu d-switch">
-        <span class="menu-button" onclick="openNav()">&#9776;</span>
-        <div id="mySidenav" class="sidenav">
-          <a href="#">Navigation:</a>
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="index.html#about-us">| About us</a>
-          <a href="info.html">| Information</a> 
-          <a href="gallery.html">| Gallery</a>
-          <a href="info.html#location">| Location</a>
-          <a href="#contact-us">| Contact us</a>
+    <div style="height: 100px;"></div>
+
+    <section class="section fade-in-section">
+        <div class="container">
+            <h2 class="section-title reveal-text">Amenities & Services</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="media/optimized/wifiicon.jpg" class="feature-icon" alt="Wifi">
+                    <h3>Free Wifi</h3>
+                    <p>High-speed internet access throughout the property.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="media/optimized/parkicon.jpg" class="feature-icon" alt="Parking">
+                    <h3>Free Parking</h3>
+                    <p>Secure parking space available for all guests.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="media/optimized/diningicon.jpg" class="feature-icon" alt="Dining">
+                    <h3>Fully Equipped</h3>
+                    <p>Modern kitchen and dining facilities for your comfort.</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="container d-none d-md-flex flex-row justify-content-end">
-      
-        <a class="d-flex" href="index.html#about-us">About us</a>
-        <a class="d-flex">|</a>
-        <a class="d-flex" href="info.html">Information</a>
-        <a class="d-flex">|</a>
-        <a class="d-flex" href="gallery.html">Gallery</a>
-        <a class="d-flex">|</a>
-        <a class="d-flex" href="info.html#location">Location</a>
-        <a class="d-flex">|</a>
-        <a class="d-flex" href="#contact-us">Contact us</a>
+    </section>
 
-      </div>
-    </div>
-
-
-
-
-    <h1 style="text-align: center; color: black; font-weight: bold; font-size: 50px; padding: 15px 0px;"></h1>
-    <h1 class="container" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 45px;text-align: center;">We offer:</h1>
-    
-    <div class="container info d-flex flex-column align-items-center">
-      
-      <div class="d-flex features flex-row">
-        <div class="d-flex ftimage align-self-center">
-          <img src="media/wifiicon.png" alt="">
+    <section class="section fade-in-section" style="background-color: #fff;">
+        <div class="container">
+            <h2 class="section-title">Room Details</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Rooms Include:</h3>
+                    <ul style="list-style: none; padding: 0; margin-top: 20px;">
+                        <li>✓ Sitting area & Patio</li>
+                        <li>✓ Dining table</li>
+                        <li>✓ Ironing facilities</li>
+                        <li>✓ Washing machine</li>
+                        <li>✓ Flat-screen TV</li>
+                        <li>✓ Carpeted floor</li>
+                        <li>✓ Free toiletries</li>
+                    </ul>
+                </div>
+                <div class="about-text">
+                    <h3>Additional Services:</h3>
+                    <ul style="list-style: none; padding: 0; margin-top: 20px;">
+                        <li>✓ Outdoor dining area</li>
+                        <li>✓ Free breakfast option</li>
+                        <li>✓ Flexible cancellation policy</li>
+                        <li>✓ Sightseeing tours available</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="d-flex fttext align-self-center">
-          <h2>FREE WIFI</h2>
-        </div>
-      </div>
-      <div class="d-flex features flex-row">
-        <div class="d-flex ftimage align-self-center">
-          <img src="media/parkicon.png" alt="">
-        </div>
-        <div class="d-flex fttext align-self-center">
-          <h2>FREE PARKING</h2>
-        
-        </div>
-      </div>
-      <div class="d-flex features flex-row">
-        <div class="d-flex ftimage align-self-center">
-          <img src="media/diningicon.png" alt="">
-        </div>
-        <div class="d-flex fttext align-self-center">
-          <h2>FULLY EQUIPPED KITCHEN & TOILET</h2>
-        </div>
-      </div>
-    </div>   
+    </section>
 
-    <div class="container">
-    <h1 class="" style="border-top: 1px solid black; text-align: center; color: black; font-weight: bold; font-size: 50px; padding: 30px 0px; margin:30px 0;"></h1>
-    </div>
-    
-    <div class="container info2">
-    <h1 class="" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 45px;text-align: center;">Rooms inclue:</h1>
-      <h2>| Sitting area  | Patio</h2>
-      <h2>| Dining table | Ironing facilities</h2>
-      <h2>| Washing machine | Flat-screen TV</h2>
-      <h2>| Carpeted floor | Free toiletries</h2>
-      <h1 class="" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 45px;text-align: center;">Along with:</h1>
-      <h2>| a place for outdoor dining</h2>
-      <h2>| possibility of a free breakfast</h2>
-      <h2>| flexible cancellation policy</h2>
-      <h1 class="" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 35px;text-align: center;">Contact us for information about sightseeing!</h1>
-      <iframe id="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d719.6256445690045!2d18.32058367349444!3d43.82467618455119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34f635d378eac621!2zNDPCsDQ5JzI3LjUiTiAxOMKwMTknMTQuMyJF!5e0!3m2!1sen!2sba!4v1641426751312!5m2!1sen!2sba"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-    
-    <h1 style="text-align: center; color: black; font-weight: bold; font-size: 50px; padding: 15px 0px;"></h1>
+    <section id="location" class="section fade-in-section">
+        <div class="container">
+            <h2 class="section-title reveal-text">Prime Location</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 40px auto; color: var(--text-muted);">
+                Experience the best of Ilidža. We are located minutes from the airport and the famous Tunnel of Hope. 
+                Enjoy easy access to the Olympic mountains Igman and Bjelašnica, or take a quick tram ride to Sarajevo's Old Town (Baščaršija).
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d719.6256445690045!2d18.32058367349444!3d43.82467618455119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34f635d378eac621!2zNDPCsDQ5JzI3LjUiTiAxOMKwMTknMTQuMyJF!5e0!3m2!1sen!2sba!4v1641426751312!5m2!1sen!2sba" width="100%" height="450" style="border:0; box-shadow: var(--shadow-lg); border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
 
 
-    <div id="contact-us" class="footer"><div class="container">
-      <h1>Contact us:</h1>
-      <div class="d-flex flex-switcher">
-        
-        <div class="container phones d-flex flex-column">
-
-        
-          <p>tel |  +387 61 270 127</p>
-        
-         
-          <span>Do not hesitate to contact us via phone, and we can arrange
-            a personal tour of the premises for free at your earliest convenience.
-          </span>
-
+    <footer id="contact-us" class="site-footer">
+        <div class="container">
+            <h2 class="section-title">Contact us</h2>
+            <div class="footer-grid">
+                <div class="contact-info">
+                    <p><strong>Phone:</strong> +387 61 270 127</p>
+                    <p>Do not hesitate to contact us via phone, and we can arrange a personal tour of the premises for free at your earliest convenience.</p>
+                </div>
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.577687366857!2d18.32008282926078!3d43.824293966257166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf86987906be8075a!2zNDPCsDQ5JzI3LjUiTiAxOMKwMTknMTQuMyJF!5e1!3m2!1sen!2sba!4v1641425825235!5m2!1sen!2sba" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
         </div>
-        
-      
-        <div class="container location d-flex flex-row justify-content-center">
-          <iframe style="max-width:400px; max-height: 300px; margin-bottom: 100px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.577687366857!2d18.32008282926078!3d43.824293966257166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf86987906be8075a!2zNDPCsDQ5JzI3LjUiTiAxOMKwMTknMTQuMyJF!5e1!3m2!1sen!2sba!4v1641425825235!5m2!1sen!2sba" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-      </div>
-    </div></div>
+    </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script>
-    function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
-
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
-  </script>
+  <script src="js/main.js"></script>
 
   </body>
 </html>
